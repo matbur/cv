@@ -4,6 +4,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
+\usepackage{fontspec} \newfontfamily{\NotoEmoji} {NotoColorEmoji.ttf}[Renderer=Harfbuzz]
+
 
 \usepackage{hyperref}
 \hypersetup{
@@ -14,7 +16,20 @@
 }
 
 \title{\bf\Huge Mateusz Burniak}
-\author{\href{mailto:mateusz@burniak.pl}{\nolinkurl{mateusz@burniak.pl}}}
+\author{
+\begin{minipage}[ht]{.33\textwidth}
+\centering
+{\NotoEmoji \symbol{"1F4DE}} +48 515 323 009
+\end{minipage}
+\begin{minipage}[ht]{.33\textwidth}
+\centering
+{\NotoEmoji \symbol{"2709}} \href{mailto:mateusz@burniak.pl}{\nolinkurl{mateusz@burniak.pl}}
+\end{minipage}
+\begin{minipage}[ht]{.33\textwidth}
+\centering
+\href{https://github.com/matbur}{\includegraphics[scale=.3]{github.png}/matbur}
+\end{minipage}
+}
 \date{}
 
 \definecolor{lightgray}{gray}{.8}
@@ -30,25 +45,12 @@
 \maketitle
 \thispagestyle{fancy}
 
-\begin{minipage}[ht]{.5\textwidth}
-\centering
-Konduktorska 4/36 \\
-52-130 Wrocław
-\end{minipage}
-\begin{minipage}[ht]{.5\textwidth}
-\centering
-+48 515 323 009\\
-\href{https://github.com/matbur}{\includegraphics[scale=.3]{github.png}/matbur}\\
-\end{minipage}
-
-\vspace{1em}
-
 \section*{Professional Experience}
 \begin{tabular}{L!{\VRule}R}
 Jan 2018 -- present & Full Stack Developer in Ingrid \\
 & duties:
 \begin{itemize}
-\item Creating microservices (in Go)
+\item Creating micro-services (in Go)
 \item Creating web app (in React/TS)
 \end{itemize}
 \end{tabular}
