@@ -1,11 +1,18 @@
 \documentclass{article}
 \usepackage{array, xcolor}
-\usepackage[margin=2cm]{geometry}
+\usepackage{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{fontspec} \newfontfamily{\NotoEmoji} {NotoEmoji-Regular.ttf}[Renderer=Harfbuzz]
 
+\geometry{
+ a4paper,
+ total={180mm,257mm},
+ left=15mm,
+ right=15mm,
+ top=10mm,
+}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -33,11 +40,12 @@
 \date{}
 
 \definecolor{lightgray}{gray}{.8}
-\newcolumntype{L}{>{\raggedleft}p{0.20\textwidth}}
+\newcolumntype{L}{>{\raggedleft}p{0.2\textwidth}}
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \renewcommand{\headrulewidth}{0pt}
+
 \fancyfoot[c]{I hereby authorize you to process my personal data included in my job application for the needs of the recruitment process (in accordance to the Personal Data Protection Act 29.08.1997 no 133 position 883).}
 
 \begin{document}
